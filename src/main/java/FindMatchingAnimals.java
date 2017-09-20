@@ -1,4 +1,5 @@
 import java.util.function.BiPredicate;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class FindMatchingAnimals {
@@ -25,7 +26,13 @@ public class FindMatchingAnimals {
         }
     }
 
+    private static void print4(int count, Function<Integer, Integer> function) {
+        System.out.println(function.apply(count));
+    }
+
     public static void main(String[] args) {
+
+        print4(4, c -> 10);
         print3("keith", "wenzler", (a, b) -> a.equals("keith") && b.equals("wenzler"));
         Animal2 catfish = new Animal2("fish", false, true);
         IsSwimmer isSwimmer = new IsSwimmer();

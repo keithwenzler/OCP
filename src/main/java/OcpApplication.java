@@ -1,14 +1,20 @@
+import java.util.stream.Stream;
+
 public class OcpApplication {
 
     public static void main(String[] args) {
 
-        Tiger tiger = new Tiger();
-        test(tiger, a -> a.careFor());
+        boolean b1 = false;
+        boolean b2 = false;
+
+//        Stream<Boolean> results = Stream.of(b1, b2);
+
+        boolean results = Stream.of(b1, b2).anyMatch(b -> b.equals(true));
+
+        System.out.println(results);
+
 
     }
 
-    private static void test (Animal animal, Sprint sprint) {
-        sprint.sprint(animal);
-    }
 
 }
