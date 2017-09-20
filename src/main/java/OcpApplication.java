@@ -2,9 +2,13 @@ public class OcpApplication {
 
     public static void main(String[] args) {
 
-        Hippo h1 = new Hippo("Harry", 3100);
-        System.out.println(h1);
+        Tiger tiger = new Tiger();
+        test(tiger, a -> a.careFor());
 
+    }
+
+    private static void test (Animal animal, Sprint sprint) {
+        sprint.sprint(animal);
     }
 
 }
