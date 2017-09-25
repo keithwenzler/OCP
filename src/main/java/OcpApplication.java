@@ -1,13 +1,12 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
+import java.time.Period;
+import java.time.ZoneId;
+import java.util.*;
 
 public class OcpApplication {
 
     public static void main(String[] args) {
 
-
+        System.out.println(Locale.getDefault().toString());
     }
 
 }
